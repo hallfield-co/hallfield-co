@@ -1,6 +1,8 @@
 {
   "name": "Hallfield",
   "short_name": "Hallfield",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "assets/icons/icon-512.png",
