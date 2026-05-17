@@ -52,9 +52,10 @@
 
         <p class="field-message" role="status" aria-live="polite" hidden>FIELD ACCURACY REQUIRED</p>
         <div class="action-row">
-          <form class="signup" aria-label="Email signup" novalidate>
+          <form class="signup" action="https://buttondown.com/api/emails/embed-subscribe/hallfield" method="post" target="buttondown-frame" aria-label="Email signup" novalidate>
             <label class="sr-only" for="email">Email address</label>
             <input id="email" name="email" type="email" placeholder="EMAIL ADDRESS FOR FUTURE NOTICE" autocomplete="email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+            <input type="hidden" name="embed" value="1">
             <button type="submit" aria-live="polite">SIGN UP</button>
           </form>
           <button class="end-button" type="button">END WEBSITE</button>
@@ -67,6 +68,7 @@
     </main>
 
     <p class="ending-message">THE ENDING WAS WITHOUT INCIDENT.</p>
+    <iframe class="buttondown-frame" name="buttondown-frame" title="Buttondown subscription response"></iframe>
 
     <div class="modal" id="privacy" role="dialog" aria-modal="true" aria-labelledby="privacy-title" hidden>
       <div class="modal-panel">

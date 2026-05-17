@@ -18,6 +18,7 @@ signup?.addEventListener("submit", (event) => {
 
   fieldMessage.hidden = true;
   signup.querySelector("button").textContent = "THANK YOU";
+  signup.submit();
 });
 
 email?.addEventListener("input", () => {
