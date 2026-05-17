@@ -170,6 +170,10 @@ body::after {
   border-left: 1px solid var(--line);
 }
 
+.signup button:disabled {
+  cursor: default;
+}
+
 .signup input::placeholder {
   color: var(--type);
   opacity: 1;

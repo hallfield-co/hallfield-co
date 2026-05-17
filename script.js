@@ -1,5 +1,6 @@
 const signup = document.querySelector(".signup");
 const email = document.querySelector("#email");
+const signupButton = signup?.querySelector("button");
 const endButton = document.querySelector(".end-button");
 const fieldMessage = document.querySelector(".field-message");
 let activeModal;
@@ -17,12 +18,17 @@ signup?.addEventListener("submit", (event) => {
   }
 
   fieldMessage.hidden = true;
-  signup.querySelector("button").textContent = "THANK YOU";
+  signupButton.textContent = "CHECK EMAIL";
+  signupButton.disabled = true;
   signup.submit();
 });
 
 email?.addEventListener("input", () => {
   fieldMessage.hidden = true;
+  if (!signupButton) return;
+
+  signupButton.textContent = "SIGN UP";
+  signupButton.disabled = false;
 });
 
 endButton?.addEventListener("click", () => {
